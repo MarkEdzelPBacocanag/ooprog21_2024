@@ -1,16 +1,21 @@
 public class Triangle {
-    public static void main(String[] args) {
-        int row = 10;
-        int j;
-        for(int i = 0; i < row; i++){
+    public static void main(String[] args){
 
-            for (j = row - i - 1 ; j >= 1; j--){ 
-            System.out.println(" ");
-            for (j = 0; j <= i;  j++){
-                System.out.println("T");
-                    }
-                }
+        for(int i = 1; i <=5; i++){
+
+            for(int s = 1; s <= 5-i; s++){
+
+                System.out.print(" ");
+
             }
-        }
-    }
 
+            for(int j = 1; j <= i*2-1; j++){
+
+                System.out.print("T");
+
+            }
+            System.out.println("");
+        }
+
+    }
+}
