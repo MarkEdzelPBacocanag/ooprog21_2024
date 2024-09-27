@@ -1,37 +1,48 @@
-
+import java.util.*;
 public class Circle {
 /* <----Static variables---->*/
-    public static double radius;
-    public static double diameter;
-    public static double area;
+    public  double radius;
+    public  double diameter;
+    public  double area;
 /* <----Constructor---->*/
     public Circle(){
-        radius = 1;
-        diameter = 2*radius;
-        area = 3.142 * radius * radius;
+        this.radius = 1;
+        this.diameter = 2*radius;
+        this.area = 3.142 * radius * radius;
 
     }
 
-    public static void setRadius(double rad){
-        radius = rad;
-        diameter = 2*radius;
-        area = 3.142 * radius * radius;
+    public  void   setRadius(double rad){
+        this.radius = rad;
+        this.diameter = 2*radius;
+        this.area = 3.142 * radius * radius;
     }
 /* <----Getter---->*/
-    public static double getRadius(){
+    public  double getRadius(){
         return radius;
     }
-    public static double getDiameter(){
+    public  double getDiameter(){
         return diameter;
     }
-    public static double getArea(){
+    public  double getArea(){
         return area;
     }
     public static void main(String[] args){
         Circle circle = new Circle();
+        Scanner scan;
+        scan = new Scanner(System.in);
 
-        System.out.println("Current Radius: " + getRadius());
-        System.out.println("Current Diameter: " + getDiameter());
-        System.out.println("Current Area: " + getArea());
+        System.out.println("Current Radius: " + circle.getRadius());
+        System.out.println("Current Diameter: " + circle.getDiameter());
+        System.out.println("Current Area: " + circle.getArea());
+
+        System.out.print("\nEnter radius: ");
+        double rad = Double.parseDouble(scan.nextLine());
+        circle.setRadius(rad);
+        scan.close();
+
+        System.out.println("Current Radius: " + circle.getRadius());
+        System.out.println("Current Diameter: " + circle.getDiameter());
+        System.out.println("Current Area: " + circle.getArea());
     }
 }
