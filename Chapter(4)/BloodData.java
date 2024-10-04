@@ -3,8 +3,8 @@ public class BloodData {
     private String rhFactor;
 
     //setting the value for the Blood Type
-    public void setBloodType(String blood_Type){
-        this.bloodType = blood_Type;
+    public void setBloodType(String bloodType){
+        this.bloodType = bloodType;
     }
     //setting the value of the RH Factor
     public void setRhFactor(String rh_Factor){
@@ -33,13 +33,7 @@ public class BloodData {
     //This will displays the Blood Type and RH value of the user
     public void displayBloodInfo(){
         System.out.println("Your Blood Type: " + bloodType);
-        //this will check if there's an input from the user
-        //if there's none the default value of the RH Factor will display       
-        if(rhFactor.isEmpty()){
-                    System.out.println("Your RH Factor: -");
-            }else{
-                System.out.println("Your Rh Factor: +");
-            }
+        System.out.println("Your RH Factor: " + rhFactor);
     }
 
 
