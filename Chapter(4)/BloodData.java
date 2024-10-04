@@ -33,7 +33,7 @@ public class BloodData {
     //This will displays the Blood Type and RH value of the user
     public void displayBloodInfo(){
         System.out.println("Your Blood Type: " + bloodType);
-        //this will check if there an input from the user
+        //this will check if there's an input from the user
         //if there's none the default value of the RH Factor will display       
         if(rhFactor.isEmpty()){
                     System.out.println("Your RH Factor: -");
