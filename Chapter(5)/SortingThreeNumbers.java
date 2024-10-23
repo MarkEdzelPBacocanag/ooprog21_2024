@@ -25,7 +25,7 @@ public class SortingThreeNumbers {
         }
         System.out.println("Ascending Order: ");
         for (int i = 0; i < value.length; i++) {
-            System.out.println("\tValue[" + i + "]" + value[i]);
+            System.out.println("\tValue[" + (i+1) + "]" + value[i]);
         }
         for(int i = 0; i < value.length; i++){
             for(int j = 0; j < value.length - i - 1; j++){
@@ -38,7 +38,7 @@ public class SortingThreeNumbers {
         }
         System.out.println("\n Descending Order: ");
         for (int i = 0; i < value.length; i++) {
-            System.out.println("\tValue[" + i + "]" + value[i]);
+            System.out.println("\tValue[" + (i + 1) + "]" + value[i]);
         }
     }
 }
