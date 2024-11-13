@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SpoonerismGenerator{
+public class SpoonerismGenerator {
     public static void main(String[] args){
         run();
     }
