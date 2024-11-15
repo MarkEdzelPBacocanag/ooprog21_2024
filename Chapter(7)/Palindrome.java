@@ -23,7 +23,7 @@ public class Palindrome{
          System.out.println("This " + word + " is not Palindarome");
       
       }
-     }
+}
       
    public static boolean isPalindrome(String word){
          
@@ -37,8 +37,8 @@ public class Palindrome{
                return false;
             
             }
-           left++;
-           right--;
+         left++;
+         right--;
          }  
          return true;
       }
